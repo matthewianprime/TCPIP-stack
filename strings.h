@@ -85,26 +85,12 @@ static const char szDebugorRelease[]=		"Debug";
 #endif
 
 #ifdef SEB
-	#ifdef ASL
-	static const char szDefaultBanner[]=	"\r\nASLH Ltd p/n ASLH305\n\r\nType help for a list of commands\r\n\r\n>";
-	static const char szIndex[]=			"<b><h1>ASLH Ltd<p>LAN Modem p/n ASLH305 %s<br>\r\nSelect an item to configure</b></h1>\r\n";
-	static const char szTitle[]=			"<HEAD><TITLE>Digital SP LAN Modem</TITLE></HEAD>\r";
-	static const char szATI[]=		 		"\r\nASLH Ltd p/n ASLH305%s\r\n";
-	static const char szRoutersName[]=		"LANmodem";
-	#else
-	static const char szDefaultBanner[]=	"\r\nDigital SP SEB\n\r\nType help for a list of commands\r\n\r\n>";
-	static const char szIndex[]=			"<b><h1>Digital SP LAN Modem %s<p>Select an item to configure</b></h1>\r\n";
-	static const char szTitle[]=			"<HEAD><TITLE>Digital SP LAN Modem</TITLE></HEAD>\r";
+	static const char szDefaultBanner[]=	"\r\nSEB\n\r\nType help for a list of commands\r\n\r\n>";
+	static const char szIndex[]=			"<b><h1>LAN Modem %s<p>Select an item to configure</b></h1>\r\n";
+	static const char szTitle[]=			"<HEAD><TITLE>LAN Modem</TITLE></HEAD>\r";
 	static const char szATI[]=		 		"\r\nDigital SP LAN Modem Version %s\r\n";
 	static const char szRoutersName[]=		"SEB";
-	#endif	
-
-#else
-static const char szTitle[]=				"<HEAD><TITLE>Digital SP LAN Modem</TITLE></HEAD>\r";
-static const char szDefaultBanner[]=		"\r\nDigital SP CreditGate-e\n\r\nType help for a list of commands\r\n\r\n>";
-static const char szIndex[]=				"<b><h1>Digital SP CreditGate-e<p>Select an item to configure</b></h1>\r\n";
-static const char szRoutersName[]=			"Router";
-#endif
+#endif	
 
 #ifdef TFTP
 static const char szTFTP[]=					"TFTP";
@@ -170,13 +156,8 @@ static const char szFILETYPE_PROFILE[]=		"prf";
 static const char szFILETYPE_SYSTEM[]=		"sys";
 static const char szFILETYPE_TEXT[]=		"txt";
 
-static const char szProfileDCU[]=			"DCU";
 static const char szProfilePRN[]=			"Printer";
 static const char szProfilePRI[]=			"PRI";
-static const char szProfileEASE[]=			"Ease";
-static const char szProfileElster[]=		"ELSTER";
-static const char szProfileGalaxy[]=		"Galaxy";
-static const char szProfileADPRO[]=			"ADPRO";
 static const char szProfilePAD[]=			"PAD";
 static const char szProfile2217[]=			"Server";
 static const char szProfileFactory[]=		"factory";
@@ -653,7 +634,6 @@ static const char szPAP[]=					"PAP";
 static const char szCHAP[]=					"CHAP";
 static const char szTCPModem[]=				"MODEM";
 static const char szPAD[]=					"X28 PAD";
-static const char szGalaxy[]=				"Galaxy";
 
 static const char szTx_UDP[]=				"UDP Tx %u bytes to %0a";
 static const char szUDPCreatedClient[]= 	"UDP created client %s (port %u)";
